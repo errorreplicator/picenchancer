@@ -31,7 +31,7 @@ def generator():
 
     noise = Input(shape=noise_shape)
     img = model(noise)
-    return (noise, img)
+    return Model(noise,img)
 
 def discriminator():
     from keras.models import Sequential, Model
